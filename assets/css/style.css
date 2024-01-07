@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  z-index: 1000;
+}
+nav .travel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .travel img {
+  width: 150px;
+}
+nav .travel ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .travel ul li {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  list-style-type: none;
+  transition: all 0.5s ease;
+}
+nav .travel ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+nav .travel ul li a:hover {
+  border-bottom: 1px solid white;
+}
+nav .travel i {
+  display: none;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgb(154, 201, 202);
+}
+.modal ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.modal ul li {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  list-style-type: none;
+}
+.modal ul li a {
+  text-decoration: none;
+  color: white;
+}
+.modal i {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.sect1 {
+  width: 100%;
+  padding: 200px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sect1 .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect1 .head .walk {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.sect1 .head .walk p {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+.sect1 .head .walk h1 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+  color: white;
+}
+.sect1 .head .walk button {
+  width: 220px;
+  height: 60px;
+  border: 2px solid white;
+  background: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: white;
+  transition: all 0.5s ease;
+  margin-top: 30px;
+}
+.sect1 .head .walk button:hover {
+  background-color: #fcb900;
+  border-color: #fcb900;
+  cursor: pointer;
+}
+
+.sect2 {
+  width: 100%;
+  padding: 80px 0;
+}
+.sect2 .tour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sect2 .tour .book {
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.sect2 .tour .book img {
+  width: 24%;
+}
+.sect2 .tour .book h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+}
+.sect2 .tour .book p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: dimgrey;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 1200px;
+  }
+  nav .travel ul {
+    display: none;
+  }
+  nav .travel i {
+    display: block;
+  }
+  .sect1 .head .walk h1 {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
