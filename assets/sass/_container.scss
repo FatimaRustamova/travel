@@ -130,16 +130,25 @@ nav{
 
 .sect2{
     width: 100%;
-    padding: 80px 0;
+    padding: 60px 0;
     .tour{
         @include flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;    
         .book{
             width: 24%;
             @include center;
             flex-direction: column;
             gap: 15px;
+            margin-top: 50px;
+            position: relative;
+            i{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                font-size: 25px;
+                cursor: pointer;
+                color: red;
+            }
             img{
                 width: 24%;
             }
@@ -155,13 +164,417 @@ nav{
                 text-align: center;
                 line-height: 1.5;
             }
+            button{
+                width: 140px;
+                height: 40px;
+                border: 1px solid teal;
+                background-color: teal;
+                color: $color1;
+                font-size: 16px;
+                font-family: $font-family1;
+                cursor: pointer;
+            }
         }
     }
+}
+
+.sect3{
+    width: 100%;
+    @include flex;
+    height: 100vh;
+    margin-top: 50px;
+    .left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: $color4;
+        h2{
+            font-family: $font-family1;
+            font-size: 30px;
+        }
+        p{
+            font-family: $font-family2;
+            font-size: 16px;
+            color: $color2;
+        }
+    }
+    .right{
+        width: 50%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.sect4{
+    width: 100%;
+    @include flex;
+    height: 100vh;
+    .city{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: $color4;
+        h2{
+            font-family: $font-family1;
+            font-size: 30px;
+        }
+        p{
+            font-family: $font-family2;
+            font-size: 16px;
+            color: $color2;
+        }
+    }
+    .photo{
+        width: 50%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.sect5{
+    width: 100%;
+    padding: 100px 0;
+    .popular{
+        @include center;
+        flex-direction: column;
+        gap: 15px;
+        h2{
+            font-family: $font-family1;
+            font-size: 30px;
+        }
+        p{
+            font-family: $font-family2;
+            font-size: 16px;
+            color: $color2;
+            text-align: center;
+        }
+    }
+    .pictures{
+        width: 100%;
+        @include flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        .div{
+            width: 23%;
+            margin-top: 30px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.sect6{
+    width: 100%;
+    padding: 80px 0;
+    background-image: url("../images/amsterdam-1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .discover{
+        @include center;
+        flex-direction: column;
+        gap: 10px;
+        h2{
+            font-family: $font-family1;
+            font-size: 30px;
+            color: $color1;
+            text-align: center;
+        }
+        p{
+            font-family: $font-family2;
+            font-size: 16px;
+            color: $color1;
+            text-align: center;
+        }
+    }
+}
+
+.sect7{
+    width: 100%;
+    padding: 50px 0;
+    background-color: $color4;
+    .news{
+        @include flex;
+        .staff{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            h2{
+                font-family: $font-family1;
+                font-size: 30px;
+            }
+            p{
+                font-family: $font-family2;
+                font-size: 16px;
+                color: $color2;
+            }
+        }
+        button{
+            width: 150px;
+            height: 45px;
+            background-color: $color3;
+            border: 1px solid $color3;
+            font-family: $font-family1;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+    .clear{
+        @include flex;
+        margin-top: 60px;
+        .water{
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            .top{
+                width: 100%;
+                height: 65%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .bottom{
+                width: 100%;
+                height: 35%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                background-color: $color1;
+                p{
+                    font-family: $font-family2;
+                    font-size: 14px;
+                    color: $color2;
+                }
+                h2{
+                    font-family: $font-family1;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 25px 0;
+    .foot{
+        @include flex;
+        p{
+            font-family: $font-family1;
+            font-size: 15px;
+            color: $color2;
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            i{
+                color: $color2;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.details{
+    width: 100%;
+    padding: 180px 0 100px 0;
+    @include center;
+    .book{
+        width: 24%;
+        border: 2px solid $color5;
+        padding: 30px;
+        @include center;
+        flex-direction: column;
+        gap: 15px;
+        img{
+            width: 24%;
+        }
+        h2{
+            text-align: center;
+            font-family: $font-family1;
+            font-size: 25px;
+        }
+        p{
+            font-family: $font-family2;
+            font-size: 16px;
+            color: $color2;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+}
+
+.favorites{
+    width: 100%;
+    padding: 30px 0;
+    h1{
+        text-align: center;
+        font-family: $font-family1;
+        font-size: 40px;
+        i{
+            color: red;
+        }
+    }
+    #favorites{
+        @include flex;
+        flex-wrap: wrap; 
+        margin-top: 60px;   
+        .book{
+            width: 24%;
+            @include center;
+            flex-direction: column;
+            gap: 15px;
+            position: relative;
+            i{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                font-size: 25px;
+                cursor: pointer;
+                color: red;
+            }
+            img{
+                width: 24%;
+            }
+            h2{
+                text-align: center;
+                font-family: $font-family1;
+                font-size: 25px;
+            }
+            p{
+                font-family: $font-family2;
+                font-size: 16px;
+                color: $color2;
+                text-align: center;
+                line-height: 1.5;
+            }
+            button{
+                width: 140px;
+                height: 40px;
+                border: 1px solid teal;
+                background-color: teal;
+                color: $color1;
+                font-size: 16px;
+                font-family: $font-family1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.add{
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+    @include center;
+    form{
+        border: 2px solid $color5;
+        width: 420px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        label{
+            font-family: $font-family1;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        img{
+            margin-left: 80px;
+            width: 30%;
+        }
+        input[type=file]::file-selector-button{
+            width: 120px;
+            height: 40px;
+            background-color: $color5;
+            border: 1px solid $color5;
+            font-family: $font-family2;
+            font-size: 16px;
+            color: $color1;
+            cursor: pointer;
+        }
+        input[type=submit]{
+            width: 150px;
+            height: 45px;
+            background-color: $color5;
+            border: 1px solid $color5;
+            font-family: $font-family2;
+            font-size: 16px;
+            color: $color1;
+            margin-top: 10px;
+            margin-left: 100px;
+            cursor: pointer;
+        }
+        input[type=text]{
+            width: 100%;
+            height: 40px;
+            background-color: $color1;
+            border: 1px solid $color1;
+            font-family: $font-family2;
+            font-size: 16px;
+            padding-left: 15px;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
+
+.back{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 120px;
+    height: 40px;
+    font-family: $font-family1;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $color1;
+    background-color: $color5;
+    border: 1px solid $color5;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 @media screen and (max-width:990px) {
     .container{
         max-width: 800px;
+    }
+    .sect7{
+        .news{
+            button{
+                display: none;
+            }
+        }
+        .clear{
+            flex-wrap: wrap;
+            .water{
+                width: 47%;
+                margin-top: 30px;
+            }
+        }
     }
 }
 
@@ -185,6 +598,75 @@ nav{
                 h1{
                     font-size: 30px;
                 }
+            }
+        }
+    }
+    .sect2{
+        .tour{
+            .book{
+                width: 47%;
+                margin-top: 50px;
+            }
+        }
+    }
+    .sect3{
+        flex-direction: column;
+        height: 200vh;
+        .left{
+            width: 100%;
+        }
+        .right{
+            width: 100%;
+        }
+    }
+    .sect4{
+        flex-direction: column;
+        height: 200vh;
+        .photo{
+            width: 100%;
+        }
+        .city{
+            width: 100%;
+        }
+    }
+    .sect5{
+        .pictures{
+            .div{
+                width: 47%;
+            }
+        }
+    }
+    .sect7{
+        .clear{
+            flex-direction: column;
+            .water{
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+    footer{
+        .foot{
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .sect2{
+        .tour{
+            flex-direction: column;
+            .book{
+                width: 100%;
+            }
+        }
+    }
+    .sect5{
+        .pictures{
+            flex-direction: column;
+            .div{
+                width: 100%;
             }
         }
     }

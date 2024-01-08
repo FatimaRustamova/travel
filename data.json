@@ -1,28 +1,48 @@
 {
-    "Travel" : [
-        {
-            "id": 1,
-            "image": "./assets/images/image1.png",
-            "name": "Tour organizer",
-            "desc": "Organize your travel plan in easy steps, visit magnificent world attractions."
-        },
-        {
-            "id": 2,
-            "image": "./assets/images/image2.png",
-            "name": "Book a flight",
-            "desc": "Find the best deals for your next flight, high class flight and low cost ticket."
-        },
-        {
-            "id": 3,
-            "image": "./assets/images/image3.png",
-            "name": "Plan your trip",
-            "desc": "Set your plan as a single traveler or in a group, our company will be there."
-        },
-        {
-            "id": 4,
-            "image": "./assets/images/image4.png",
-            "name": "Cruise deals",
-            "desc": "Be the captain of your own trip, get the best cruise deals from the system on our site."
-        }
-    ]
+  "Travel": [
+    {
+      "id": 1,
+      "image": "./assets/images/image1.png",
+      "name": "Tour organizer",
+      "desc": "Organize your travel plan in easy steps, visit magnificent world attractions."
+    },
+    {
+      "id": 2,
+      "image": "./assets/images/image2.png",
+      "name": "Book a flight",
+      "desc": "Find the best deals for your next flight, high class flight and low cost ticket."
+    },
+    {
+      "id": 3,
+      "image": "./assets/images/image3.png",
+      "name": "Plan your trip",
+      "desc": "Set your plan as a single traveler or in a group, our company will be there."
+    },
+    {
+      "id": 4,
+      "image": "./assets/images/image4.png",
+      "name": "Cruise deals",
+      "desc": "Be the captain of your own trip, get the best cruise deals from the system on our site."
+    }
+  ],
+  "Favorite": [
+    {
+      "id": 1,
+      "image": "./assets/images/image1.png",
+      "name": "Tour organizer",
+      "desc": "Organize your travel plan in easy steps, visit magnificent world attractions."
+    },
+    {
+      "id": 2,
+      "image": "./assets/images/image2.png",
+      "name": "Book a flight",
+      "desc": "Find the best deals for your next flight, high class flight and low cost ticket."
+    },
+    {
+      "id": 3,
+      "image": "./assets/images/image3.png",
+      "name": "Plan your trip",
+      "desc": "Set your plan as a single traveler or in a group, our company will be there."
+    }
+  ]
 }
