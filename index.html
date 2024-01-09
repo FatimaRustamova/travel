@@ -31,7 +31,7 @@
     </nav>
 
     <!-- --Modal-- -->
-    <section class="modal">
+    <section class="modal none">
         <div class="container">
             <ul>
                 <li><a href="#">Destinations</a></li>
@@ -60,6 +60,10 @@
     <!-- --Section 2-- -->
     <section class="sect2">
         <div class="container">
+            <div class="input">
+                <input type="search">
+                <button id="sort">SORT</button>
+            </div>
             <div class="tour">
             </div>
         </div>
@@ -133,6 +137,9 @@
                 <div class="water">
                     <div class="top">
                         <img src="./assets/images/giza-400x250.jpg" alt="">
+                        <div class="secret">
+                            <img src="./assets/images/loader.gif" alt="">
+                        </div>
                     </div>
                     <div class="bottom">
                         <p>JUNE 13, 2017</p>
@@ -142,6 +149,9 @@
                 <div class="water">
                     <div class="top">
                         <img src="./assets/images/mediterrenean-400x250.jpg" alt="">
+                        <div class="secret">
+                            <img src="./assets/images/loader.gif" alt="">
+                        </div>
                     </div>
                     <div class="bottom">
                         <p>JUNE 9, 2017</p>
@@ -151,6 +161,9 @@
                 <div class="water">
                     <div class="top">
                         <img src="./assets/images/dubrovnik-1-400x250.jpg" alt="">
+                        <div class="secret">
+                            <img src="./assets/images/loader.gif" alt="">
+                        </div>
                     </div>
                     <div class="bottom">
                         <p>JUNE 6, 2017</p>
@@ -175,6 +188,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- --Hurricane-- -->
+    <div class="hurricane">
+        <i class="bi bi-hurricane"></i>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./assets/js/script.js"></script>
